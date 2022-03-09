@@ -1,0 +1,44 @@
+.fuente1 {
+  font-family: 'Smooch Sans', sans-serif; }
+
+@media (min-width: 1024px) {
+  .sticky {
+    top: 0px;
+    position: sticky; } }
+
+@media (max-width: 750px) {
+  .mobile {
+    display: flex;
+    top: 0px;
+    justify-content: center; } }
+
+.fondo {
+  background-color: black; }
+
+header,
+footer {
+  background-color: #5c5858;
+  padding: 1rem;
+  color: white; }
+
+.margin {
+  margin: 0px; }
+
+nav {
+  font-size: 25px; }
+
+body {
+  background-color: grey; }
+
+.texto {
+  color: white;
+  font-size: 25px; }
+
+.texto1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  font-size: 20px; }
+
+.img {
+  width: 100px;
+  height: auto; }

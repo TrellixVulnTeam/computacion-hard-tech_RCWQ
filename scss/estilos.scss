@@ -1,0 +1,63 @@
+@import "../estilos/colores";
+@import "../estilos/fuentes";
+@import "../estilos/tipografia";
+
+@media (min-width:1024px)
+{
+    .sticky {
+        top: 0px;
+        position: sticky;
+    }
+}
+
+@media (max-width:750px)
+{
+    .mobile {
+        display: flex;
+        top: 0px;
+        justify-content: center;
+    }
+}
+
+.fondo {
+    background-color: $color1;
+}
+
+
+header,
+footer {
+    background-color: $color4;
+    padding: 1rem;
+    color: $color2;
+}
+
+
+.margin {
+    margin: 0px;
+}
+
+nav {
+    font-size: $tamaño1;
+}
+
+
+body {
+    background-color: $color3;
+}
+
+.texto {
+    color: $color2;
+    font-size: $tamaño1;
+}
+
+.texto1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    $tamaño1: 20px;
+    color: $color2;
+    font-size: $tamaño1;
+}
+
+.img {
+    width: 100px;
+    height: auto;
+}
