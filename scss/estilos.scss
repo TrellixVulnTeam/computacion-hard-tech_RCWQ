@@ -23,6 +23,14 @@
     background-color: $color1;
 }
 
+li{
+    color: greenyellow;
+    &:hover{
+        color: $color2;
+        font-size: $tamaño2;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
 
 header,
 footer {

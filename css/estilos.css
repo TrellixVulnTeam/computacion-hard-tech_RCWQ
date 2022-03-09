@@ -15,6 +15,13 @@
 .fondo {
   background-color: black; }
 
+li {
+  color: greenyellow; }
+  li:hover {
+    color: white;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
 header,
 footer {
   background-color: #5c5858;
