@@ -2,6 +2,17 @@
 @import "../estilos/fuentes";
 @import "../estilos/tipografia";
 
+/*Map*/
+$colores:(color1:black, color2:white, color3: grey);
+
+@each $clave, $valor in $colores {
+    .color-#{$clave} {
+        background-color:$valor;
+    }
+}
+
+
+
 @media (min-width:1024px)
 {
     .sticky {
@@ -19,24 +30,27 @@
     }
 }
 
-.fondo {
-    background-color: $color1;
-}
+/*map-get*/
+$estilo1: (
+    color: $color2
+);
 
-li{
-    color: greenyellow;
-    &:hover{
-        color: $color2;
-        font-size: $tamaño2;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+li:hover{
+    color: map-get($estilo1,color);   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-}
 
-header,
-footer {
+.header {
     background-color: $color4;
     padding: 1rem;
     color: $color2;
+}
+
+
+/*extend*/
+.footer {
+    @extend.header;
+    background-color: $color2;
 }
 
 
@@ -45,27 +59,34 @@ footer {
 }
 
 nav {
-    font-size: $tamaño1;
+    font-size: $tamano1;
 }
 
 
-body {
-    background-color: $color3;
-}
 
 .texto {
     color: $color2;
-    font-size: $tamaño1;
+    font-size: $tamano1;
 }
 
 .texto1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     $tamaño1: 20px;
     color: $color2;
-    font-size: $tamaño1;
+    font-size: $tamano1;
 }
 
 .img {
     width: 100px;
     height: auto;
+}
+
+/*mixin*/
+@mixin fontsize {
+    font-size: $tamano2;
+}
+
+.li-color {
+    @include fontsize;
+    color: $color1;
 }

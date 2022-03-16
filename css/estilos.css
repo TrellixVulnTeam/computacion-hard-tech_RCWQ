@@ -1,6 +1,16 @@
 .fuente1 {
   font-family: 'Smooch Sans', sans-serif; }
 
+/*Map*/
+.color-color1 {
+  background-color: black; }
+
+.color-color2 {
+  background-color: white; }
+
+.color-color3 {
+  background-color: grey; }
+
 @media (min-width: 1024px) {
   .sticky {
     top: 0px;
@@ -12,30 +22,25 @@
     top: 0px;
     justify-content: center; } }
 
-.fondo {
-  background-color: black; }
+/*map-get*/
+li:hover {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 
-li {
-  color: greenyellow; }
-  li:hover {
-    color: white;
-    font-size: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
-
-header,
-footer {
+.header, .footer {
   background-color: #5c5858;
   padding: 1rem;
   color: white; }
+
+/*extend*/
+.footer {
+  background-color: white; }
 
 .margin {
   margin: 0px; }
 
 nav {
   font-size: 25px; }
-
-body {
-  background-color: grey; }
 
 .texto {
   color: white;
@@ -44,8 +49,13 @@ body {
 .texto1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
-  font-size: 20px; }
+  font-size: 25px; }
 
 .img {
   width: 100px;
   height: auto; }
+
+/*mixin*/
+.li-color {
+  font-size: 40px;
+  color: black; }
